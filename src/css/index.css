@@ -1,6 +1,36 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body ul {
+  list-style: none;
+}
+
+header .content-header {
+  width: 100vw;
+  height: 121px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content-header .logo {
+  width: 120px;
+}
+header .content-header .nav-links ul {
+  display: flex;
+  flex-direction: row;
+}
+header .content-header .nav-links li {
+  padding: 8px;
+}
+header .content-header .options ul {
+  display: flex;
+  flex-direction: row;
+}
+header .content-header .options li {
+  padding: 8px;
 }
 
 /*# sourceMappingURL=index.css.map */
