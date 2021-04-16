@@ -8,35 +8,51 @@
     <title>Wx3</title>
 </head> 
 <body>
-    <header class="header">
-        <div class="Navbar">
-            <div class="Navbar__Link Navbar__Link-brand">
-               Website title
-             </div>
-             <div class="Navbar__Link Navbar__Link-toggle">
-               <i class="fas fa-bars"></i>
-             </div>
-           <nav class="Navbar__Items">
-             <div class="Navbar__Link">
-               Longer Link
-             </div>
-             <div class="Navbar__Link">
-               Longer Link
-             </div>
-             <div class="Navbar__Link">
-               Link
-             </div>
-           </nav>
-           <nav class="Navbar__Items Navbar__Items--right">
-             <div class="Navbar__Link">
-               Link
-             </div>
-             <div class="Navbar__Link">
-               Link
-             </div>
-           </nav>
-         </div>
-    </header>
+  <header class="header">
+    <div class="content-header">
+      <div class="container">
+        <input type="checkbox" id="checkbox-menu">
+    
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+     
+      </div>
+      <div class="logo">
+        <p>Logo</p>
+     </div>
+     <div class="nav-links">
+         <ul>
+             <li><a href="#">News</a></li>
+             <li><a href="#">Cintas</a></li>
+             <li><a href="#">Calcinhas</a></li>
+             <li><a href="#">Pijamas</a></li>
+             <li><a href="#">Camisolas</a></li>
+             <li><a href="#">Gestante</a></li>
+             <li><a href="#">Sexy</a></li>
+             <li><a href="#">Sutiãs</a></li>
+             <li><a href="#">Coleções</a></li>
+             <li><a href="#">Outlets</a></li>
+         </ul>
+     </div>
+     <div class="options">
+        <ul>
+          <li><img src="../assets/svg/lupa.svg" alt="Buscar"/></li>
+          <li><img src="../assets/svg/heart.svg" alt="Favoritos"/></li>
+        <li>
+            <img src="../assets/svg/woman.svg"  alt="Login"/>
+            <span id="span-login"><a href="#">Login | Cadastre-se</a></span>
+        </li>
+          <li>
+            <img src="../assets/svg/cart.svg" alt="Carrinho"/>
+            <span id="span-login"><a href="#">R$ 0,00</a></span>
+          </li>
+        </ul>
+     </div>
+    </div>
+  </header>
     <div class="carousel">
         <div class="carousel-inner">
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
@@ -53,13 +69,13 @@
             </div>
             <ul class="carousel-indicators">
                 <li>
-                    <label for="carousel-1" class="carousel-bullet"></label>
+                    <label for="carousel-1" class="carousel-bullet carousel--1 carousel"  >•</label>
                 </li>
                 <li>
-                    <label for="carousel-2" class="carousel-bullet"></label>
+                    <label for="carousel-2" class="carousel-bullet carousel--2">•</label>
                 </li>
                 <li>
-                    <label for="carousel-3" class="carousel-bullet"></label>
+                    <label for="carousel-3" class="carousel-bullet carousel--3">•</label>
                 </li>
             </ul>
         </div>
@@ -131,6 +147,7 @@
                   </div>
               </div>
               <h2 class="footer-card">Ver tudo</h2>
+
             <div class="banner-info">
                 <div class="info-container">
                     <div class="info-item">
@@ -153,7 +170,7 @@
                 </div>
             </div>
         
-        <h2 class="title-card">Lançamentos</h2>
+        <h2 class="title-card">Destaques</h2>
             <div class="card-wrapper">
                 <div class="card">
                 <img class="image" alt="card-1" src="../assets/img/card-1.png">
@@ -246,7 +263,7 @@
                     </div> 
                     </div>
                 </div>
-            <h2 class="title-card">Lançamentos</h2>
+            <h2 class="title-card">Outlet</h2>
             <div class="card-wrapper">
                 <div class="card">
                 
@@ -312,13 +329,88 @@
               </div>
               <h2 class="footer-card">Ver tudo</h2>
 
-            <div class="banner-collection"></div>
-            <div class="testimony-block-slide"></div>
+            <div class="banner-collection">
+                <img src="https://img.wbuy.com.br/arquivos/716e4a38b25646de77fae5c2fd1b2059/slide/minha-publicac-a-o-55-561.jpg" alt="Banner">
+            </div>
+            <div class="testimony-block">
+                <div class="testimony-container">
+                    <div class="item1">
+                        <h2>Depimentos</h2>
+                        <p>O que os nossos clientes então dizendo</p>
+                    </div>
+                    <div class="item2"> 
+                        <div class="grid-item">
+                          <img src="../assets/img/rosto1.png" alt="">
+                          <div>
+                            <h3>Eliana A.</h3>
+                            <p>São José do Rio Preto - SP</p>
+                            <img src="../assets/img/stars.png" alt="">
+                          </div>
+                          <div class="aspas">
+                            <img  class="aspas2" src="../assets/img/aspas2.png" alt="">
+                            
+                            <img class="aspas1" src="../assets/img/aspas1.png" alt="">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item3">
+                        <div class="grid-item">
+                          <img src="../assets/img/rosto1.png" alt="">
+                          <div>
+                            <h3>Eliana A.</h3>
+                            <p>São José do Rio Preto - SP</p>
+                            <img src="../assets/img/stars.png" alt="">
+                          </div>
+                          <div>
+                            <img src="" alt="">
+                          </div>
+                        </div>
+                    </div>  
+                    <div class="item4">
+                        <div class="grid-item">
+                          <img src="../assets/img/rosto1.png" alt="">
+                          <div>
+                            <h3>Eliana A.</h3>
+                            <p>São José do Rio Preto - SP</p>
+                            <img src="../assets/img/stars.png" alt="">
+                          </div>
+                          <div>
+                            <img src="" alt="">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item1"> 
+                        <label>•</label>
+                        <label>•</label>
+                        <label>•</label>
+                    </div>
+                  </div>
+            </div>
         </div>
     </main>
-    <footer>
+  <footer class="footer">
+    <div class="footer-cont-top">
+      <div>
+        <h1>LOGO</h1>
+      </div>
+      <div>
+        <p >Cadastre-se o seu e-mail e <strong>ganhe</strong><br/><strong> 10% de desconto</strong> na sua primeira compra</p>
+      </div>
+      <div>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Name">
+        <input type="submit" value="CADASTRAR">
+      </div>
+    </div>
+    <div class="footer-cont-cent">
 
-    </footer>
-    <script src="../js/responsive-menu.js"></script>
+    </div>
+    <div class="footer-cont-bott">
+
+    </div>
+
+  </footer>
+  <script src="../js/responsive-menu.js"></script>
+  <script src="../js/slide.js"></script>
 </body>
 </html>

@@ -1,49 +1,137 @@
-.Navbar {
-  background-color: #46ACC2;
+header {
+  font-family: $poppins-font;
+  color: $black;
+  .content-header{
+  width: 100%;
+  height: 121px;
   display: flex;
-  padding: 16px;
-  font-family: sans-serif;
-  color: white;
-}
+  justify-content: space-between;
+  align-items: center;
+  .container{
+    display: none;
+  }
+  .logo{
+    margin: 42px 35px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .nav-links{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    text-transform: uppercase;
+    ul{
+      display: flex;
+      flex-direction: row;
+    }
+    li{
+      padding: 5px;
+      a{
+        color: $black;
+      } 
+    }
+  }
+  @media screen and (max-width: 1328px) {
+    #span-login{
+      display: none;
+    }
+  }
 
-.Navbar__Link {
-  padding-right: 8px;
-}
+  @media screen and (max-width: 1128px) {
+    .nav-links{
+      display: none;
+    }
+    .logo{
+      position: absolute;
+      left: 40%;
+      margin-left: 10px;
 
-.Navbar__Items {
+    }
+    .container{
+      position: relative;
+      top: 50px;
+      display: block;
+    }
+    @media screen and (max-width: 650px) {
+      .options{
+        display: none;
+      }
+    }
+  }
+  .options{
+    ul{
+      display: flex;
+      flex-direction: row;
+    }
+    li{
+      padding: 12px;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      line-height: 22px;
+      font-weight: 400;
+      a{
+        color: $black;
+      }
+    }
+  }
+}
+}
+.container{
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Navbar__Items--right {
-  margin-left:auto;
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
 }
 
-.Navbar__Link-toggle {
-  display: none;
+label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-    
-.Navbar__Items {
-    display:none;
-  }
-    
-.Navbar__Items--right {
-    margin-left:0;
-  }
-    
-.Navbar__ToggleShow {
-    display: flex;
-  }
-    
-.Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-   } 
+label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: $black;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top:8px;
 }
