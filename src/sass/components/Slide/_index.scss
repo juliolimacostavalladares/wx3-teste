@@ -34,15 +34,16 @@
             li{
                 display: inline-block;
                 margin: 0 5px;
-                .carousel-bullet:before {
-                    content: '•';
+                .carousel-open:checked{
                     border: 1px solid #ffffff;
                     border-radius: 100%;
+                    line-height: 0.5;
+                }
+                .carousel-bullet {
                     width: 0.5em;
                     height: 0.5em;
                     font-size: 50px;
                     display: inline-block;
-                    line-height: 0.5;
                     color: #ffffff;
 
                 }
