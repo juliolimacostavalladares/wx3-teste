@@ -5,82 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <title>Wx3</title>
+    <title>Wx3</title> 
 </head> 
 <body>
   <header class="header">
-    <div class="content-header">
-      <div class="container">
-        <input type="checkbox" id="checkbox-menu">
-    
-        <label for="checkbox-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-     
+    <!-- Mobile Nav -->
+    <input id="header__icon-hamburguer" type="checkbox" />
+
+    <label for="header__icon-hamburguer">
+      <div class="menu-hamburguer">
+        <span class="menu-hamburguer__item"></span>
       </div>
-      <div class="logo">
-        <p>Logo</p>
-     </div>
-     <div class="nav-links">
-         <ul>
-             <li><a href="#">News</a></li>
-             <li><a href="#">Cintas</a></li>
-             <li><a href="#">Calcinhas</a></li>
-             <li><a href="#">Pijamas</a></li>
-             <li><a href="#">Camisolas</a></li>
-             <li><a href="#">Gestante</a></li>
-             <li><a href="#">Sexy</a></li>
-             <li><a href="#">Sutiãs</a></li>
-             <li><a href="#">Coleções</a></li>
-             <li><a href="#">Outlets</a></li>
-         </ul>
-     </div>
+    </label>
+    <!-- Mobile Nav End-->
+    <nav class="nav-mobile">
+      <ul class="nav-mobile__list">
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">News</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Cintas</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Calcinhas</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Pijamas</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Camisolas</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Gestante</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Sexy</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Sutiãs</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Coleções</a></li>
+        <li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Outlets</a></li>
+      </ul>
+     </nav>
+
+    <span class="header__logo">LOGO</span>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#">News</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Cintas</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Calcinhas</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Pijamas</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Camisolas</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Gestante</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Sexy</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Sutiãs</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Coleções</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Outlets</a></li>
+      </ul>
+     </nav>
      <div class="options">
-        <ul>
-          <li><img src="../assets/svg/lupa.svg" alt="Buscar"/></li>
-          <li><img src="../assets/svg/heart.svg" alt="Favoritos"/></li>
-        <li>
-            <img src="../assets/svg/woman.svg"  alt="Login"/>
-            <span id="span-login"><a href="#">Login | Cadastre-se</a></span>
-        </li>
-          <li>
-            <img src="../assets/svg/cart.svg" alt="Carrinho"/>
-            <span id="span-login"><a href="#">R$ 0,00</a></span>
-          </li>
+        <ul class="options__list">
+          <li class="options__item"><img class="options__img" src="../../assets/svg/lupa.svg" alt="Buscar"/></li>
+          <li class="options__item"><img class="options__img" src="../../assets/svg/heart.svg" alt="Favoritos"/></li>
+          <li class="options__item options__item--special"><img class="options__img" src="../../assets/svg/woman.svg"  alt="Login"/><span>Login | Cadastre-se</span></li>
+          <li class="options__item options__item--special"><img class="options__img" src="../../assets/svg/cart.svg" alt="Carrinho"/><span>R$0,00</span></li>
         </ul>
      </div>
-    </div>
   </header>
-    <div class="carousel">
-        <div class="carousel-inner">
-            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-            <div class="carousel-item">
-                <img src="https://img.wbuy.com.br/arquivos/716e4a38b25646de77fae5c2fd1b2059/slide/minha-publicac-a-o-55-561.jpg">
-            </div>
-            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-            <div class="carousel-item">
-                <img src="https://comprafacillingerie.vteximg.com.br/arquivos/ids/382454/FRETE%20GR%C3%81TIS%20DESK.jpg?v=637523884071300000">
-            </div>
-            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-            <div class="carousel-item">
-                <img src="https://comprafacillingerie.vteximg.com.br/arquivos/ids/382158/BANNER%202.jpg?v=637520503760800000">
-            </div>
-            <ul class="carousel-indicators">
-                <li>
-                    <label for="carousel-1" class="carousel-bullet carousel--1 carousel"  >•</label>
-                </li>
-                <li>
-                    <label for="carousel-2" class="carousel-bullet carousel--2">•</label>
-                </li>
-                <li>
-                    <label for="carousel-3" class="carousel-bullet carousel--3">•</label>
-                </li>
-            </ul>
+  <div class="carousel">
+    <div class="carousel__group">
+        <input class="carousel__open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel__item">
+            <img src="https://img.wbuy.com.br/arquivos/716e4a38b25646de77fae5c2fd1b2059/slide/minha-publicac-a-o-55-561.jpg">
         </div>
+        <input class="carousel__open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel__item">
+            <img src="https://comprafacillingerie.vteximg.com.br/arquivos/ids/382454/FRETE%20GR%C3%81TIS%20DESK.jpg?v=637523884071300000">
+        </div>
+        <input class="carousel__open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel__item">
+            <img src="https://comprafacillingerie.vteximg.com.br/arquivos/ids/382158/BANNER%202.jpg?v=637520503760800000">
+        </div>
+        <ul class="carousel__indicators">
+            <li>
+                <label for="carousel-1" class="carousel__bullet" >•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel__bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel__bullet">•</label>
+            </li>
+        </ul>
     </div>
-    <main>
+    <!-- <main>
         <h2 class="title-card">Lançamentos</h2>
             <div class="card-wrapper">
                 <div class="card">
@@ -409,7 +412,7 @@
 
     </div>
 
-  </footer>
+  </footer> -->
   <script src="../js/responsive-menu.js"></script>
   <script src="../js/slide.js"></script>
 </body>
