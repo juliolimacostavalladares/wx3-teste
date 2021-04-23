@@ -1,0 +1,13 @@
+//BASE
+    //CSS BASES RESETS
+@import './basics/reset/reset';
+    //CSS BASES FONTS
+@import "./basics/fonts/fonts";
+    //CSS BASES COLORS
+@import "./basics/colors/colors";
+//HEADER
+    //IMPORTING CSS HEADER
+@import "./components/header/header";
+//SLIDE
+    //IMPORTING CSS SLIDE
+    @import "./components/slide/slide";
