@@ -1,5 +1,5 @@
 main{
-  margin-top: 200px;
+  margin-top: 145px;
   font-family: "Poppins";
 } 
 .title-card{
@@ -135,7 +135,11 @@ font-weight: bolder;
 width: 100%;
 }
 }
-
+@media screen and (max-width: 822px){
+  .indicator{
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 1359px){
     .card {
       margin-bottom: 50px;
