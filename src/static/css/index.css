@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Authentic Signature";
-  src: url("../../../../../src/assets/sass/basics/fonts/Authentic Signature.ttf") format("truetype");
+  src: url("../../../../../wx3-teste/src/assets/sass/basics/fonts/Authentic Signature.ttf") format("truetype");
 }
 .header {
   width: 100%;
