@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: "Authentic Signature";
+  src: url("../../../../../src/assets/sass/basics/fonts/Authentic Signature.ttf") format("truetype");
+}
 .header {
   width: 100%;
   height: 121px;
@@ -238,6 +242,629 @@
   font-size: 50px;
   display: inline-block;
   color: #ffffff;
+}
+
+@media (max-width: 674px) {
+  .footer .contet-1 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+.footer {
+  background-color: #5a5a5a;
+  font-family: "Poppins";
+}
+.footer .contet-1 {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-areas: "logo logo logo" "desconto desconto desconto" "form form form";
+  grid-gap: 10px;
+  margin: 0 80px;
+  padding: 60px 0;
+}
+@media (max-width: 1227px) {
+  .footer .contet-1 .contet-1__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .footer .contet-1 .contet-1__form input {
+    margin: 15px 0;
+  }
+}
+.footer .contet-1 input {
+  font-family: "Poppins";
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 41px;
+}
+.footer .contet-1 input[type=submit] {
+  background: #000000;
+  color: #ffffff;
+}
+.footer .contet-1__item h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-right: 6px;
+}
+.footer .contet-1__item p {
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+.footer .contet-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  background: #ffffff;
+  padding: 20px;
+}
+@media (max-width: 885px) {
+  .footer .contet-2__item:first-child div:first-child {
+    width: 100% !important;
+  }
+  .footer .contet-2__item:first-child div:last-child {
+    width: 100% !important;
+  }
+}
+.footer .contet-2__item:first-child div:first-child {
+  overflow-y: hidden;
+  width: 862px;
+  height: 246px;
+  padding-right: 10px;
+}
+.footer .contet-2__item:first-child div:first-child img {
+  width: 100%;
+}
+.footer .contet-2__item:first-child div:last-child {
+  overflow-y: hidden;
+  width: 509px;
+  height: 246px;
+  position: relative;
+  color: #ffffff;
+}
+.footer .contet-2__item:first-child div:last-child img {
+  width: 100%;
+}
+.footer .contet-2__item:first-child div:last-child h1 {
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  top: 18%;
+  left: 30%;
+}
+.footer .contet-2__item:first-child div:last-child p {
+  font-size: 16px;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+.footer .contet-2__item:nth-child(2) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer .contet-2__item:nth-child(2) ul {
+  display: flex;
+}
+.footer .contet-2__item:nth-child(2) ul li {
+  padding: 0 18px;
+}
+@media (max-width: 1160px) {
+  .footer .contet-2__item:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav:nth-child(2) {
+  margin-bottom: 40px;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav:nth-child(3) {
+  margin-bottom: 30px;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav:nth-child(3) li {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav:nth-child(4) {
+  margin-bottom: 30px;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav:nth-child(4) li {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav:nth-child(5) {
+  margin-top: 18px;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav:nth-child(5) li {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav .contet-2__title {
+  text-align: initial;
+  font-size: 15px;
+  color: #5a5a5a;
+  text-align: initial;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+.footer .contet-2__item:nth-child(3) .contet-2__nav .contet-2__link {
+  font-size: 13px;
+  text-align: initial;
+}
+@media (max-width: 1160px) {
+  .footer .contet-2__item:nth-child(3) .contet-2__nav .contet-2__title {
+    text-align: center;
+  }
+  .footer .contet-2__item:nth-child(3) .contet-2__nav .contet-2__link {
+    text-align: center;
+  }
+}
+.footer .contet-2__item:nth-child(4) {
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  flex-direction: column;
+  color: #5a5a5a;
+}
+.footer .contet-2__item:nth-child(4) div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.footer .contet-2__item:nth-child(4) hr {
+  border: 0;
+  margin: 18px 0;
+  width: 100%;
+  background-color: #5a5a5a;
+  height: 2px;
+}
+.footer .contet-2__item:nth-child(4) p {
+  font-size: 10px;
+}
+.footer .contet-2__item:nth-child(4) span {
+  font-weight: bolder;
+  font-size: 10px;
+}
+@media (max-width: 960px) {
+  .footer .contet-2__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer .contet-2__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+main {
+  margin-top: 200px;
+  font-family: "Poppins";
+}
+
+.title-card {
+  margin-bottom: 59px;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.card__footer {
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 59px;
+  font-family: "Poppins";
+}
+
+.indicator {
+  display: flex;
+  position: relative;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 10%;
+  font-size: 50px;
+}
+.indicator__bullet {
+  padding: 6px;
+}
+.indicator__bullet div {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #5a5a5a;
+}
+.indicator__bullet--special div {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  border: 1px solid #5a5a5a;
+}
+.indicator__previous {
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+.indicator__next {
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card:hover .card__button {
+  margin-top: 10px;
+  position: absolute;
+  visibility: visible;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 4px 45px;
+  filter: drop-shadow(0 0 3.5px rgba(175, 161, 161, 0.25));
+  background-color: #5a5a5a;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.card {
+  flex-basis: calc(20% - 20px);
+  margin: 0px 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.6s;
+}
+.card__lancamento {
+  position: absolute;
+  border-radius: 4px;
+  top: 7px;
+  left: 7px;
+  padding: 0 8px;
+  color: #ffffff;
+  font-size: 11px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #5a5a5a;
+}
+.card__button {
+  visibility: hidden;
+}
+.card__price, .card__description, .card__product-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__stars {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.card__product-name {
+  color: #5d5d5d;
+  text-align: center;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+.card__description {
+  color: #000000;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: bolder;
+}
+.card__price {
+  color: #ff5d46;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: bolder;
+}
+.card__price h1 {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+.card__image {
+  width: 100%;
+}
+
+@media screen and (max-width: 1359px) {
+  .card {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card {
+    flex-basis: calc(50% - 16px);
+    margin-bottom: 95px;
+  }
+  .card .stars {
+    margin-left: 95px;
+  }
+}
+.banner-collection {
+  width: 100%;
+}
+.banner-collection img {
+  width: 100%;
+}
+
+.banner-info {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  margin-bottom: 69px;
+}
+.banner-info__container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0 133px;
+}
+.banner-info__item {
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-size: 12px;
+  text-align: center;
+}
+.banner-info__item > img {
+  margin-bottom: 59px;
+}
+.banner-info #boleto {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 700px) {
+  .banner-info__container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 40px;
+  }
+}
+
+.gallery {
+  margin-bottom: 69px;
+  width: 100%;
+  background-color: #000000;
+}
+.gallery .gallery__container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 60px;
+  background-color: #000000;
+  justify-content: center;
+}
+.gallery .gallery__container .gallery__item-1 {
+  grid-row: 1/span 2;
+}
+.gallery .gallery__container .gallery__img-1 {
+  width: 500px;
+  height: 810px;
+  position: relative;
+}
+.gallery .gallery__container .gallery__img-1 .gallery__text-1 {
+  top: 75%;
+  left: 5%;
+  position: absolute;
+  color: white;
+}
+.gallery .gallery__container .gallery__img-1 .gallery__text-1 h2 {
+  font-size: 100px;
+  font-family: "Authentic Signature";
+}
+.gallery .gallery__container .gallery__img-1 .gallery__text-1 p {
+  top: -20px;
+  position: relative;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+.gallery .gallery__container .gallery__img-2 {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.gallery .gallery__container .gallery__img-2 .gallery__text-2 {
+  top: 50%;
+  left: 5%;
+  position: absolute;
+  color: white;
+}
+.gallery .gallery__container .gallery__img-2 .gallery__text-2 h2 {
+  font-size: 100px;
+  font-family: "Authentic Signature";
+  margin-left: 10px;
+}
+.gallery .gallery__container .gallery__img-2 .gallery__text-2 p {
+  top: -20px;
+  position: relative;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+.gallery .gallery__container .gallery__img-3 {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.gallery .gallery__container .gallery__img-3 .gallery__text-3 {
+  top: 50%;
+  left: 5%;
+  position: absolute;
+  color: white;
+}
+.gallery .gallery__container .gallery__img-3 .gallery__text-3 h2 {
+  font-size: 100px;
+  font-family: "Authentic Signature";
+}
+.gallery .gallery__container .gallery__img-3 .gallery__text-3 p {
+  top: -20px;
+  position: relative;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+@media screen and (max-width: 990px) {
+  .gallery .gallery__container .gallery__img-1 {
+    width: 350px;
+    height: 400.5px;
+    position: relative;
+  }
+  .gallery .gallery__container .gallery__img-1 .gallery__text-1 {
+    top: 75%;
+    left: 5%;
+    position: absolute;
+    color: white;
+  }
+  .gallery .gallery__container .gallery__img-1 .gallery__text-1 h2 {
+    font-size: 50px;
+    font-family: "Authentic Signature";
+  }
+  .gallery .gallery__container .gallery__img-1 .gallery__text-1 p {
+    top: -10px;
+    position: relative;
+    font-size: 15px;
+    font-family: "Poppins";
+  }
+  .gallery .gallery__container .gallery__img-2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  .gallery .gallery__container .gallery__img-2 .gallery__text-2 {
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    color: white;
+  }
+  .gallery .gallery__container .gallery__img-2 .gallery__text-2 h2 {
+    font-size: 50px;
+    font-family: "Authentic Signature";
+    margin-left: 5px;
+  }
+  .gallery .gallery__container .gallery__img-2 .gallery__text-2 p {
+    top: -10px;
+    position: relative;
+    font-size: 15px;
+    font-family: "Poppins";
+  }
+  .gallery .gallery__container .gallery__img-3 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  .gallery .gallery__container .gallery__img-3 .gallery__text-3 {
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    color: white;
+  }
+  .gallery .gallery__container .gallery__img-3 .gallery__text-3 h2 {
+    font-size: 50px;
+    font-family: "Authentic Signature";
+    margin-left: 5px;
+  }
+  .gallery .gallery__container .gallery__img-3 .gallery__text-3 p {
+    top: -10px;
+    position: relative;
+    font-size: 15px;
+    font-family: "Poppins";
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery .gallery__container .gallery__img-1 {
+    width: 175px;
+    height: 200.25px;
+    position: relative;
+  }
+  .gallery .gallery__container .gallery__img-1 .gallery__text-1 {
+    top: 75%;
+    left: 5%;
+    position: absolute;
+    color: white;
+  }
+  .gallery .gallery__container .gallery__img-1 .gallery__text-1 h2 {
+    font-size: 25px;
+    font-family: "Authentic Signature";
+  }
+  .gallery .gallery__container .gallery__img-1 .gallery__text-1 p {
+    top: -5px;
+    position: relative;
+    font-size: 7.5px;
+    font-family: "Poppins";
+  }
+  .gallery .gallery__container .gallery__img-2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  .gallery .gallery__container .gallery__img-2 .gallery__text-2 {
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    color: white;
+  }
+  .gallery .gallery__container .gallery__img-2 .gallery__text-2 h2 {
+    font-size: 25px;
+    font-family: "Authentic Signature";
+    margin-left: 2.5px;
+  }
+  .gallery .gallery__container .gallery__img-2 .gallery__text-2 p {
+    top: -5px;
+    position: relative;
+    font-size: 7.5px;
+    font-family: "Poppins";
+  }
+  .gallery .gallery__container .gallery__img-3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  .gallery .gallery__container .gallery__img-3 .gallery__text-3 {
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    color: white;
+  }
+  .gallery .gallery__container .gallery__img-3 .gallery__text-3 h2 {
+    font-size: 25px;
+    font-family: "Authentic Signature";
+    margin-left: 2.5px;
+  }
+  .gallery .gallery__container .gallery__img-3 .gallery__text-3 p {
+    top: -5px;
+    position: relative;
+    font-size: 7.5px;
+    font-family: "Poppins";
+  }
+}
+.gallery .gallery__container .gallery__img-3 > img {
+  width: 100%;
+  height: 100%;
+}
+.gallery .gallery__container .gallery__img-2 > img {
+  width: 100%;
+  height: 100%;
+}
+.gallery .gallery__container .gallery__img-1 > img {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

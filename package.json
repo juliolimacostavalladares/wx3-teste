@@ -6,8 +6,5 @@
   "repository": "https://github.com/juliolimacostavalladares/wx3-teste.git",
   "author": "Julio Lima Consta Valladres <juliolima1225@gmail.com>",
   "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "sass": "^1.32.8"
-  }
+  "private": false
 }
