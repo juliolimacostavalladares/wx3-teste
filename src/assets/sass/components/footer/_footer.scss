@@ -1,0 +1,222 @@
+@media (max-width: 674px){
+    .footer  .contet-1 {
+        display: flex !important;
+        flex-direction: column !important;
+    }    
+}
+.footer {
+    background-color: $primary-gray;
+    font-family: "Poppins";
+    .contet-1{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-areas:
+      'logo logo logo'
+      'desconto desconto desconto'
+      'form form form';
+    grid-gap: 10px;
+    margin:0 80px;
+    padding: 60px 0;
+    @media (max-width: 1227px){
+        .contet-1{
+                &__form{
+                display: flex;
+                flex-direction: column;
+                margin: 0 10px;
+                input{
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+    
+    input{
+        font-family: "Poppins";
+        border: none;
+        outline: none;
+        width: 200px;
+        height: 41px;
+    }
+    input[type='submit']{
+        background: $primary-black;
+        color: $primary-white;
+    }
+        &__item{
+            h1{
+                font-size: 40px;
+                text-transform: uppercase;
+                font-weight: bolder;
+                margin-right: 6px;
+            }
+            p{
+                font-size: 15px;
+                text-align: center;
+                color: $primary-white;
+            }
+        }
+    }
+    .contet-2{
+        display: flex;
+        flex-direction: column;
+        background-color: $primary-white;
+        background: $primary-white;
+        padding: 20px;
+        
+        &__item:first-child {
+            @media (max-width: 885px){
+                div:first-child{
+                    width: 100% !important;
+                }
+                div:last-child{
+                    width: 100% !important;
+                }
+            }
+            div:first-child{
+                overflow-y: hidden;
+                width: 862px;
+                height: 246px;
+                padding-right: 10px;
+                img{
+                    width: 100%;
+                }
+            }
+            div:last-child{
+                overflow-y: hidden;
+                width: 509px;
+                height: 246px;
+                position: relative;
+                color: $primary-white;
+               
+                img{
+                    width: 100%;
+                }
+                h1{
+                    position: absolute;
+                    font-size: 20px;
+                    text-align: center;
+                    top: 18%;
+                    left: 30%;
+                }
+                p{
+                    font-size: 16px;
+                    position: absolute;
+                    top: 35%;
+                    left: 25%;
+                }
+            }
+        }
+        &__item:nth-child(2){
+            margin-top: 30px;
+            margin-bottom: 30px;
+            ul{
+                display: flex;
+                li{
+                    padding: 0 18px;
+                }
+            }
+        }
+        @media (max-width: 1160px){
+            &__item:nth-child(3){
+                display: flex;
+            flex-direction: column;
+            }
+        }
+        &__item:nth-child(3){
+            .contet-2__nav:nth-child(2){
+                margin-bottom: 40px;
+            }
+            .contet-2__nav:nth-child(3){
+                margin-bottom: 30px;
+                li{
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .contet-2__nav:nth-child(4){
+                margin-bottom: 30px;
+                li{
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .contet-2__nav:nth-child(5){
+                margin-top: 18px;
+                li{
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .contet-2__nav{
+                display: flex;
+                flex-direction: column;
+                
+                .contet-2__title{
+                    text-align: initial;
+                    font-size: 15px;
+                    color: $primary-gray;
+                    text-align: initial;
+                    font-weight: bolder;
+                    margin-bottom: 15px;
+                }
+                .contet-2__link{
+                    font-size: 13px;
+                    text-align: initial;
+                }
+            }
+            @media (max-width: 1160px){
+                .contet-2__nav{
+                    .contet-2__title{
+                        text-align: center;
+                    }
+                    .contet-2__link{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+        &__item:nth-child(4){
+            display: flex;
+            position: relative;
+            margin-top: 30px;
+            flex-direction: column;
+            color: $primary-gray;
+            div{
+                justify-content:center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+            }
+            hr {
+                border: 0;
+                margin: 18px 0;
+                width: 100%;               
+                background-color: $primary-gray;
+                height: 2px;
+            }
+            p{
+                font-size: 10px;
+            }
+            span{
+                font-weight: bolder;
+                font-size: 10px;
+            }
+        }
+        @media (max-width: 960px){
+            &__item{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+    }
+}

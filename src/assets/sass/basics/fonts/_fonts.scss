@@ -1,1 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'Authentic Signature';
+    src: url('../../../../../src/assets/sass/basics/fonts/Authentic\ Signature.ttf') format('truetype');
+  }
+$authentic-signature: 'Authentic Signature';
